@@ -1,0 +1,46 @@
+.section-1 { background: url(../img/vd-large-1.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
+.section-2 { background: url(../img/vd-large-2.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
+.section-3 { background: url(../img/vd-med-1.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
+.section-4 { background: url(../img/vd-med-2.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; }
+.seat-red { background: url(../img/vd-small-1.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+.seat-black { background: url(../img/vd-small-2.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+.frame-red { background: url(../img/vd-small-3.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+
+h2.frame { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; padding-top: 40px; margin-top: 45px; }
+h2.mech { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; padding-top: 40px; margin-top: 45px; }
+h2.front-frame { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; padding-top: 40px; margin-top: 45px; }
+
+.section-row {
+	border-top: 1px solid #ccc; 
+}
+
+.section-1 {
+	border-right: 1px solid #ccc;
+}
+
+.section-2 {
+	border-left: 1px solid #ccc;
+}
+
+.section-3 {
+	border-right: 1px solid #ccc;
+}
+
+.section-4 {
+	border-left: 1px solid #ccc;
+}
+
+@media screen and (max-width: 480px) {
+
+    .section-1, .section-2 {
+        height: 290px
+    }
+
+    .small-featured-img {
+    	height: 160px;
+    }
+
+    .section-4, .section-3 {
+    	height: 450px; 
+    }
+}

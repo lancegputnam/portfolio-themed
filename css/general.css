@@ -1,17 +1,12 @@
-/*
-Theme: Flatfy Theme
-Author: Andrea Galanti
-Bootstrap Version 
-Build: 1.0
-http://www.andreagalanti.it
-*/
 
-/*General */
 
 body, html {
 	height: 100%;
 	width: 100%;
 	overflow-x:hidden;
+	font-family: "brandon-grotesque";
+	margin: 0;
+	padding: 0;
 }
 
 ::-moz-selection{background:#1abc9c;color:white}
@@ -23,10 +18,8 @@ body, html {
 .abcen1{position: absolute;top: 20%;}
 
 .content-section-c {
-	border-top: 1px solid #32465A;
-	border-bottom: 1px solid #32465A;
 	background-color: #555555;
-	padding: 90px 0;
+	padding-top: 1em;
 }
 
 .descp{
@@ -73,13 +66,22 @@ margin: auto;
 }
 
 .h1_home{
-	font-size: 80px;
+	font-size: 50px;
 	font-family: "brandon-grotesque";
-	font-weight: 300;
-	letter-spacing: 6px;
+	letter-spacing: 16px;
+	margin-bottom: 0;
 }
 
-.h3_home{font-weight: 300;}
+.h3_home{
+	font-family: "brandon-grotesque";
+	letter-spacing: 4px;
+	font-size: 21px;
+	margin-top: 10px;
+}
+
+h2 {
+	font-family: "brandon-grotesque";
+}
 
 /*own carousel */
 
@@ -137,7 +139,7 @@ filter: alpha(opacity=95) !important;
 	position:absolute;
 	left:50%; /* centers the loading animation horizontally one the screen */
 	top:50%; /* centers the loading animation vertically one the screen */
-	background-image:url(../img/status.gif); /* path to your loading animation */
+	/*background-image:url(../img/status.gif);*/ /* path to your loading animation */
 	background-repeat:no-repeat;
 	background-position:center;
 	margin:-100px 0 0 -100px; /* is width and height divided by two */
@@ -170,23 +172,36 @@ width: 50px;
 	border-color: rgba(52, 73, 94, 0);
 }
 
-.tworow{margin-top: 90px;}
+.tworow{
+	margin-top: 75px;
+	margin-bottom: 4em;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
 
 .social {
 	text-align: center;
-	font-size: 60px;
+	font-size: 36px;
 	text-decoration: none;
 	list-style-type: none;
 	color: #fff; 
+	margin-bottom: 25px; 
 }
 
 .social .fa:hover {
-	color: #ccc; 
+	color: #2C599A;
+	transition: all .2s linear;
+	-webkit-animation: fadeInUp 0.5s; 
 }
 
 .social .fa {
-	margin-right: 20px;
-	color: #fff;
+	color: #efefef;
+	padding: 35px;
+	transition: all .2s linear;
+	-webkit-animation: fadeInUp 0.5s;
 }
 
 .box-icon {
@@ -234,8 +249,12 @@ color: #ffffff;
 color: #ECEBEB;
 }
 
+.case-studies a:hover {
+	opacity: .8;
+}
+
 .navbar-brand {
-	font-family: arvo;
+	font-family: "brandon-grotesque";
 	letter-spacing: 3px;
 	font-weight: 400 !important;
 }
@@ -250,8 +269,7 @@ color: #ECEBEB;
 	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 	padding-bottom: 50px;
 	color: #f8f8f8;
-	background: url(https://farm9.staticflickr.com/8604/15274349863_6be4b60ed7_o.jpg) no-repeat center center;
-	background-size: cover;
+	background: url(https://farm8.staticflickr.com/7625/16849914975_af62584d5b_o.png) center center;
 	text-align: center;
 }
 
@@ -281,7 +299,7 @@ color: #ECEBEB;
 .intro-message > h3 {
 	margin: 0;
 	font-size: 2.8em;
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "brandon-grotesque";
 	font-weight: 300;
 	letter-spacing: 0px;
 	margin-top: 10px;
@@ -291,7 +309,7 @@ color: #ECEBEB;
 .network-name {
 	font-size: 14px;
 	font-weight: 400;
-	letter-spacing: 1.5px;
+	letter-spacing: 4px;
 }
 
 .content-section-a {
@@ -316,10 +334,13 @@ color: #ECEBEB;
 }
 
 .banner {
-	padding: 100px 0;
+	padding: 55px 0;
 	color: #f8f8f8;
-	background: url(https://farm9.staticflickr.com/8604/15274349863_6be4b60ed7_o.jpg) no-repeat center center;
-	background-size: cover;
+	background: url(https://farm8.staticflickr.com/7625/16849914975_af62584d5b_o.png) center center;
+}
+
+.back-to-top {
+	float: right;
 }
 
 /* Animate */
@@ -886,7 +907,7 @@ color: #ECEBEB;
 
 /* Colors and sizes for individual in flow buttons */
 .morph-button-inflow-1 {
-	width: 600px;
+	width: 400px;
 	margin: 2em auto;
 	-webkit-transition: height 0.5s cubic-bezier(0.7,0,0.3,1);
 	transition: height 0.5s cubic-bezier(0.7,0,0.3,1);
@@ -1071,9 +1092,8 @@ color: #ECEBEB;
 			padding-bottom: 50px;
 			color: #f8f8f8;
 		    background-image: none; 
-			background-size: cover;
 			text-align: center;
-			background-color: #34495e;
+			background: url(https://farm8.staticflickr.com/7625/16849914975_af62584d5b_o.png) center center;
 		}
 		
 		h1, .h1 {
@@ -1087,21 +1107,15 @@ color: #ECEBEB;
 		
 		.button_down {display:none}
 		
-		
+		.navbar-default .navbar-toggle {
+			margin-top: -5px !important; 
+		}
+
+		.case-studies {
+			text-align: center; 
+		}
 	}
 
-/* Mobile Landscape */
-@media only screen and (min-width: 480px) and (max-width: 767px) { 
-	
-	
-	
-}
-
-/* Mobile Portrait */
-@media only screen and (max-width: 479px) {
-	
-	
-}
 @media screen and (max-width: 600px) {
 	.morph-button-modal.open .morph-content {
 		top: 0% !important;
@@ -1264,19 +1278,113 @@ p.copyright {
 
 @media screen and (max-width: 1200px) {
 	.col-md-8 {
-		padding-left: 0px;
 		padding-top: 50px;
-	}
-	.row {
-		margin-bottom: -80px;
 	}
 }
 
+@media screen and (max-width: 1199px) {
+	.col-md-8 {
+		padding-left: 0px;
+		padding-right: 0px;
+		width: 100%;
+		text-align: left;
+	}
+}
 
+@media screen and (max-width: 991px){
+	.col-md-4 img {
+		width: 100%;
+	}
 
+	.col-md-8 {
+		padding-top: 0px;
+		text-align: center;	
+	}
+}
 
+@media screen and (max-width: 767px){
+	.col-sm-6 {
+		margin-bottom: 2em;
+	}
 
+	.tworow {
+		margin-top: 0px;
+	}
+}
 
+.col-md-7 {
+	padding-top: 7em;
+}
+
+.email-button {
+	text-align: center; 
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 20px;
+	padding: 6px;
+	transition: all .2s linear;
+	-webkit-animation: fadeInUp 0.5s;
+}
+
+.email-button a {
+	color: #fff;
+}
+
+.email-button:hover {
+	background-color: #fff;
+	color: #333333;
+	-webkit-animation: fadeInUp 0.5s;
+}
+
+.mockup-content {
+	margin-bottom: 2em;
+}
+
+@media screen and (max-width: 600px) {
+	.social .fa {
+		padding: 12px;
+	}
+}
+
+@media screen and (max-width: 390px) {
+    .email-button {
+        font-size: 18px;
+    }
+
+    .social {
+        font-size: 61px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .navbar-brand {
+        font-size: 21px !important;
+    }
+
+    .navbar-default .navbar-brand {
+        letter-spacing: 2px !important; 
+        margin-top: 6px !important;
+    }
+}
+
+.case-studies ul {
+	padding: 0;
+}
+
+.case-studies li {
+	list-style: none; 
+	display: inline-block;
+	font-family: "brandon-grotesque";
+}
+
+.case-studies-text {
+	border-bottom: 1px solid #666;
+}
+
+.case-studies span {
+	font-family: "brandon-grotesque";
+	font-size: 20px;
+}
 
 
 

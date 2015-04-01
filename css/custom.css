@@ -154,37 +154,6 @@ padding: 8px 12px;
 	margin: inherit;
 }
 
-.orange{
-	background: #ff8a3c;
-}
-.darkCyan{
-	background: #42bdc2;
-}
-.forestGreen{
-	background: #7fc242;
-}
-.yellow {
-	background: #ffd800;
-}
-.dodgerBlue {
-	background: #388bd1;
-}
-.skyBlue {
-	background: #a1def8;
-}
-.zombieGreen {
-	background: #3fbf79;
-}
-.violet {
-	background: #db6ac5;
-}
-.yellowLight {
-	background: #fee664;
-}
-.steelGray {
-	background: #cad3d0;
-}
-
 /* More Demo Box */
 
 #example-info h1,
